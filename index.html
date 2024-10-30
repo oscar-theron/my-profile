@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mon Site Personnel</title>
+</head>
+<body>
+    <div id="language-selection">
+        <h1>Choisissez votre langue / Choose your language</h1>
+        <button class="styled-button" onclick="setLanguage('fr')">Français</button>
+        <button class="styled-button" onclick="setLanguage('en')">English</button>
+        <button class="styled-button" onclick="setLanguage('es')">Español</button>
+        <button class="styled-button" onclick="setLanguage('de')">Deutsch</button>
+    </div>
+
+    <div class="intro-section" style="display: none;">
+        <div id="welcome-message" class="welcome-text"></div>
+        <img src="profile.jpg" alt="Photo de profil" class="profile-photo">
+        <button id="learn-more-btn" class="styled-button" onclick="showContent()"></button>
+        <button id="back-to-languages-btn" class="styled-button" onclick="goBackToLanguageSelection()" style="display: none;"></button>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <h2 id="about-me-header"></h2>
+        <p id="about-me-description"></p>
+        <h2 id="hobbies-header"></h2>
+        <p id="hobbies-description"></p>
+        <h2 id="projects-header"></h2>
+        <p id="projects-description"></p>
+        <h2 id="passions-header"></h2>
+        <p id="passions-description"></p>
+        <h2 id="social-header"></h2>
+        <ul>
+            <li><a id="linkedin-link" href="https://www.linkedin.com/in/oscar-theron" target="_blank">LinkedIn</a></li>
+            <li><a id="instagram-link" href="https://instagram.com/in/o5car_th" target="_blank">Instagram</a></li>
+            <li><a id="github-link" href="https://github.com/votreprofil" target="_blank">GitHub</a></li>
+        </ul>
+        <button id="back-to-languages-btn-content" class="styled-button" onclick="goBackToLanguageSelection()" style="display: none;"></button>
+    </div>
+
+    <script src="script.js"></script> <!-- Placez le script ici, juste avant la balise de fermeture </body> -->
+</body>
+</html>

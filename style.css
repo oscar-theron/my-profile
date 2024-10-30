@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#language-selection {
+    text-align: center;
+    margin-top: 5%; /* Réduit cette valeur pour remonter le contenu */
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.welcome-text {
+    font-size: 24px; /* Agrandir le texte de bienvenue */
+    margin-top: 10px; /* Réduire l'espacement en bas */
+}
+
+.profile-photo {
+    display: block;
+    width: 300px; /* Taille de l'image de profil */
+    height: 300px; /* Taille de l'image de profil */
+    border-radius: 100%; /* Pour faire un rond parfait */
+    object-fit: cover;
+    margin-bottom: 20px; /* Centrer l'image et espacement en bas */
+}
+
+.styled-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#main-content {
+    padding: 20px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
